@@ -69,7 +69,7 @@ explanation: "The program counter stores the address of the next instruction." '
 
 ## 4. Writing Best Practices
 - **Clarity:** Use clear, concise headings.
-- **RTL Support:** Use Arabic for content, but slugs for technical metadata. 'not a day-0 feature'
+- **RTL Support:** Use Arabic for content, but slugs for technical metadata. 'shipped'
 - **Visuals:** When including images, use the correct relative paths and descriptive alt text.
 
 ## References
