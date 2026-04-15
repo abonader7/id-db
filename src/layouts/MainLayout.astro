@@ -43,7 +43,7 @@ const { title = "College Knowledge Base" } = Astro.props;
   <footer class="w-full bg-surface-container-low border-t border-outline-variant/40 mt-auto flex flex-col md:flex-row justify-between items-center px-12 py-8 gap-4 font-label text-xs uppercase tracking-widest">
     <div class="text-on-surface-variant">College Knowledge Base. Curated by students for students.</div>
     <div class="flex items-center gap-8">
-      <a class="text-on-surface-variant hover:text-primary transition-colors" href="/docs">Documentation</a>
+      <a class="text-on-surface-variant hover:text-primary transition-colors" href={`${import.meta.env.BASE_URL}/docs`}>Documentation</a>
     </div>
   </footer>
 </body>

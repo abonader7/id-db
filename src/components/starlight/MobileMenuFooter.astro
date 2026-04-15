@@ -4,10 +4,10 @@ import DefaultMobileMenuFooter from '@astrojs/starlight/components/MobileMenuFoo
 
 <div class="mobile-site-nav">
 	<p class="nav-title">Site Navigation</p>
-	<a href="/" class="nav-link">
+	<a href={import.meta.env.BASE_URL} class="nav-link">
 		<span class="material-symbols-outlined">home</span> Home
 	</a>
-	<a href="/docs" class="nav-link">
+	<a href={`${import.meta.env.BASE_URL}/docs`} class="nav-link">
 		<span class="material-symbols-outlined">menu_book</span> Docs Library
 	</a>
 </div>

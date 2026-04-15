@@ -5,8 +5,12 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://ID-Brains.github.io',
+	base: '/id-db',
 	vite: {
 		plugins: [tailwindcss()],
+		globs: ['src/**/*.js'],
+		exclude: ['node_modules'],
 	},
 	integrations: [
 		starlight({

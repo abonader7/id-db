@@ -28,7 +28,7 @@ import AppearanceWidget from "../components/AppearanceWidget.astro";
         <div class="flex flex-col sm:flex-row gap-6">
           <a
             class="bg-gradient-to-br from-primary to-primary-container text-white px-8 py-4 rounded-md font-medium text-lg hover:shadow-lg transition-all active:scale-95 flex items-center justify-center gap-3"
-            href="/docs"
+            href={`${import.meta.env.BASE_URL}/docs`}
           >
             Browse Notes
             <span
@@ -38,7 +38,7 @@ import AppearanceWidget from "../components/AppearanceWidget.astro";
           </a>
           <a
             class="border border-outline-variant/15 text-primary px-8 py-4 rounded-md font-medium text-lg hover:bg-surface-container-low transition-all active:scale-95 flex items-center justify-center gap-3"
-            href="/docs"
+            href={`${import.meta.env.BASE_URL}/docs`}
           >
             Share Your Notes
           </a>
@@ -72,7 +72,7 @@ import AppearanceWidget from "../components/AppearanceWidget.astro";
       </div>
       <a
         class="font-label text-sm font-semibold text-primary-container border-b-2 border-primary-container pb-1"
-        href="/docs">View All Documents</a
+        href={`${import.meta.env.BASE_URL}/docs`}>View All Documents</a
       >
     </div>
     <div
@@ -80,7 +80,7 @@ import AppearanceWidget from "../components/AppearanceWidget.astro";
     >
       <a
         class="md:col-span-2 md:row-span-2 bg-surface-container-lowest rounded-xl p-10 flex flex-col justify-between hover:bg-surface-bright hover:shadow-2xl transition-all group cursor-pointer"
-        href="/docs"
+        href={`${import.meta.env.BASE_URL}/docs`}
       >
         <div>
           <div
@@ -219,7 +219,7 @@ import AppearanceWidget from "../components/AppearanceWidget.astro";
     </p>
     <a
       class="bg-primary text-white px-10 py-5 rounded-md font-bold tracking-tight hover:bg-primary-container transition-all"
-      href="/docs">Start Exploring</a
+      href={`${import.meta.env.BASE_URL}/docs`}>Start Exploring</a
     >
   </section>
   <AppearanceWidget />
