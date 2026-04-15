@@ -7,7 +7,7 @@ const docs = (await getCollection("docs"))
 
 type DocEntry = (typeof docs)[number];
 
-const toDocHref = (doc: DocEntry) => `${import.meta.env.BASE_URL}${doc.id}/`;
+const toDocHref = (doc: DocEntry) => `${import.meta.env.BASE_URL}/${doc.id}/`;
 
 const subjectsCount = new Set(docs.map((doc) => doc.data.subject)).size;
 
