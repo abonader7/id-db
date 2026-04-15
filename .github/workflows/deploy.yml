@@ -18,6 +18,8 @@ jobs:
     steps:
       - name: Checkout your repository
         uses: actions/checkout@v6
+        with:
+          fetch-depth: 1
 
       - name: cache npm modules
         uses: actions/cache@v5
@@ -25,6 +27,7 @@ jobs:
           path: |
             ~/.npm
             node_modules
+            .astro
           key: ${{ runner.os }}-npm-${{ hashFiles('package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-npm-
@@ -33,6 +36,7 @@ jobs:
         uses: withastro/action@v6
         with:
           package-manager: npm
+          node-version: 20
           # Custom build command to include Pagefind indexing
           # This ensures the search index is generated inside the dist folder
           build-cmd: |
