@@ -1,13 +1,18 @@
 # Contributing to the Knowledge Base
 
-We are excited to have people contribute contribute! Whether you're a first-level student sharing your first set of notes or a veteran maintainer, your input helps build a better resource for everyone as our main objective is to share opensource mentality.
+We are excited to have people contribute! Whether you're a first-year student sharing your first set of notes or a maintainer improving the structure, your input helps build a better resource for everyone.
+
+## Important Disclaimer
+
+This knowledge base is **not official material from any college or university**. It is an **open-source, community-driven collection** of contributions from students and maintainers. Content may reflect individual understanding, summaries, or study notes.
 
 ## 🚀 Ways to Contribute
 
 There are two main paths for contributing content:
 
-### 1. The Web Form (Easiest but not done yet look at the second way)
-Best for students who aren't familiar with Git or Markdown.
+### 1. The Web Form
+Best for students who are not familiar with Git or Markdown.
+
 - **Location:** Visit `/contribute` on our live site.
 - **Process:** Authenticate with your GitHub account, fill in the fields, and upload your file or text.
 - **What happens:** Our system will automatically create a Pull Request on your behalf.
@@ -15,30 +20,36 @@ Best for students who aren't familiar with Git or Markdown.
 
 ### 2. Direct Pull Request
 Best for those who want more control over their contributions.
+
 - **Workflow:**
-    1.  Fork the repository.
-    2.  Create a branch: `contrib/subject-title`.
-    3.  Add your Markdown file to the correct directory (see [Content Guidelines](./CONTENT_GUIDELINES.md)).
-    4.  Submit a Pull Request (PR) to the `main` branch.
+  1. Fork the repository.
+  2. Create a branch: `contrib/subject-title`.
+  3. Add your Markdown file to the correct directory (see [Content Guidelines](./docs/CONTENT_GUIDELINES.md)).
+  4. Submit a Pull Request (PR) to the `main` branch.
 
 ## 📝 Pull Request Guidelines
+
 To ensure a smooth review process, please follow these conventions:
-- **PR Title:** `[level-TERM] Subject: Short Description` (e.g., `[L3-T1] Microprocessors: Lecture 01 Summary`).
-- **Validation:** Ensure the automated checks (CI) pass. If they fail, review the error logs or ask a maintainer for help.
 
+- **PR Title:** `[level-term] Subject: Short Description`
+  Example: `[L3-T1] Microprocessors: Lecture 01 Summary`
+- **Validation:** Ensure the automated checks pass. If they fail, review the error logs or ask a maintainer for help.
 
-> **Note:** setting `language: "ar"` automatically flips the document direction to RTL, and using the cairo font for Arabic text.
+> **Note:** setting `language: "ar"` automatically flips the document direction to RTL. Use clear Arabic content where appropriate.
 
 ## 🎓 Contribution Values
+
 - **Accuracy:** Ensure your notes are accurate and clearly labeled.
-- **No Plagiarism:** Only share content you have created or have the right to share.
+- **No Plagiarism:** Only share content you created or have the right to share.
 - **Support Others:** Be helpful and respectful when reviewing others' work.
 
 ## 👩‍💻 For Maintainers
+
 - **Review Policy:** Every PR requires at least one human approval and all CI checks to pass.
-- **Subject Leads:** If you are interested in becoming a Subject Lead for a specific course, please contact a maintainer or contact a well known person in campus which will do the job for you.
+- **Subject Leads:** If you are interested in becoming a Subject Lead for a specific course, please contact a maintainer.
 
 ## References
+
 - [GitHub: How to fork a repo](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
 - [Astro: Contributing Guide](https://docs.astro.build/en/contribute/)
 - [Markdown Guide](https://www.markdownguide.org/)
