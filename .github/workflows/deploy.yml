@@ -19,6 +19,16 @@ jobs:
       - name: Checkout your repository
         uses: actions/checkout@v6
 
+      - name: cache npm modules
+        uses: actions/cache@v5
+        with:
+          path: |
+            ~/.npm
+            node_modules
+          key: ${{ runner.os }}-npm-${{ hashFiles('package-lock.json') }}
+          restore-keys:
+            - ${{ runner.os }}-npm-
+
       - name: Install, build, and generate Pagefind index
         uses: withastro/action@v6
         with:
