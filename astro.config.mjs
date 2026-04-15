@@ -3,6 +3,7 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import tailwindcss from '@tailwindcss/vite';
 import starlightGiscus from 'starlight-giscus';
+import { starlightKatex } from 'starlight-katex';
 
 // https://astro.build/config
 export default defineConfig({
@@ -27,6 +28,7 @@ export default defineConfig({
 				Footer: './src/components/starlight/Footer.astro',
 			},
 			plugins: [
+				starlightKatex(),
 				starlightGiscus({
 					repo: 'ID-Brains/id-db',
 					repoId: 'R_kgDOR9twsg',
