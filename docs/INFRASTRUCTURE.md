@@ -35,6 +35,10 @@ For files between 5–25 MB, we use **Git Large File Storage (LFS)**. This allow
 - **Astro Content Collections:** Built-in validation and type safety for our Markdown data.
 - **Zod:** A TypeScript-first schema declaration and validation library.
 
+
+## 5. Latex (starlight-kateX)
+For rendering mathematical equations, we use the `starlight-katex` for complex mathematical expressions in your notes, which are rendered beautifully on the frontend.
+
 ## References
 - [Pagefind: Static Search Engine](https://pagefind.app/)
 - [Giscus: Comments via GitHub Discussions](https://giscus.app/)
