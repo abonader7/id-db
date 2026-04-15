@@ -26,6 +26,9 @@ To ensure a smooth review process, please follow these conventions:
 - **PR Title:** `[level-TERM] Subject: Short Description` (e.g., `[L3-T1] Microprocessors: Lecture 01 Summary`).
 - **Validation:** Ensure the automated checks (CI) pass. If they fail, review the error logs or ask a maintainer for help.
 
+
+> **Note:** setting `language: "ar"` automatically flips the document direction to RTL, and using the cairo font for Arabic text.
+
 ## 🎓 Contribution Values
 - **Accuracy:** Ensure your notes are accurate and clearly labeled.
 - **No Plagiarism:** Only share content you have created or have the right to share.
