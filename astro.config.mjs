@@ -2,6 +2,7 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import tailwindcss from '@tailwindcss/vite';
+import starlightGiscus from 'starlight-giscus';
 
 // https://astro.build/config
 export default defineConfig({
@@ -25,8 +26,22 @@ export default defineConfig({
 				MobileMenuFooter: './src/components/starlight/MobileMenuFooter.astro',
 				Footer: './src/components/starlight/Footer.astro',
 			},
+			plugins: [
+				starlightGiscus({
+					repo: 'ID-Brains/id-db',
+					repoId: 'R_kgDOR9twsg',
+					category: 'Q&A',
+					categoryId: 'DIC_kwDOR9twss4C6rJv',
+					mapping: 'pathname',
+					reactionsEnabled: true,
+					inputPosition: 'top',
+					theme: 'preferred_color_scheme',
+					lang: 'en',
+					lazy: true,
+				}),
+			],
 
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/ID-Brains/id-db' }],
 			sidebar: [
 				{
 					label: 'Level 1',

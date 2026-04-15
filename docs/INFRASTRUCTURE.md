@@ -11,10 +11,11 @@ We use **Pagefind** to provide high-performance search without a backend.
 
 ## 2. Comments (Giscus)
 
-**Giscus** provides a threaded discussion layer for every content page.
-- **How it works:** Each page maps to a dedicated thread in **GitHub Discussions**.
+**Giscus** provides a threaded discussion layer for every content page via the [`starlight-giscus`](https://github.com/dragomano/starlight-giscus) plugin.
+- **How it works:** Each page maps to a dedicated thread in **GitHub Discussions** using URL pathname mapping.
 - **Interaction:** Students authenticate with their GitHub account to leave comments or react with emojis.
 - **Moderation:** Discussions are managed using standard GitHub moderation tools.
+- **Configuration:** See [`astro.config.mjs`](../../astro.config.mjs) for plugin settings.
 
 ## 3. Asset & File Storage
 
