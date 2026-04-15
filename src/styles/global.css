@@ -166,6 +166,20 @@ body[data-app-root] :is(h1, h2, h3, h4, h5, h6) {
 	color: var(--color-primary);
 }
 
+/* RTL Typography Refinements */
+[dir="rtl"] {
+	--font-body: "Cairo", sans-serif;
+	--font-headline: "Cairo", sans-serif;
+}
+
+[dir="rtl"] .sl-markdown-content :is(h1, h2, h3, h4, h5, h6) {
+	line-height: 1.4 !important;
+}
+
+[dir="rtl"] .sl-markdown-content :is(p, li, blockquote) {
+	line-height: 1.8 !important;
+}
+
 :root[data-theme="light"] {
 	--sl-color-bg: var(--color-surface);
 	--sl-color-bg-nav: var(--color-surface-container-lowest);
